@@ -2,71 +2,89 @@
 
 <p align="center">
   <a href="https://kollab.im">
-    <img src="https://cdn2.kollab.im/website/production-e9343027/_next/static/media/kollab-logo-logomark.8e231ecf.png" alt="Kollab logo" width="96" />
+    <img src="https://cdn2.kollab.im/website/production-e9343027/_next/static/media/kollab-logo-logomark.8e231ecf.png" alt="Kollab logo" width="92" />
   </a>
+</p>
+
+<p align="center">
+  <b>AI agents, Skills, Bots, Connectors, and the shared workspace where team work actually gets finished.</b>
+</p>
+
+<p align="center">
+  <a href="https://kollab.im">Website</a> ·
+  <a href="https://kollab.im/product">Product</a> ·
+  <a href="https://kollab.im/use-cases">Use cases</a> ·
+  <a href="https://kollab.im/blog">Blog</a> ·
+  <a href="https://github.com/KollabTeam/Kollab/issues">Feedback</a>
 </p>
 
 <p align="center">
   <a href="https://www.producthunt.com/products/kollab-2">
     <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=1124020&theme=light&period=daily&t=1777014123799" alt="Kollab - Product Hunt #1 Product of the Day" width="250" />
   </a>
+  <a href="https://www.npmjs.com/package/kollab">
+    <img src="https://img.shields.io/npm/v/kollab?style=for-the-badge&label=kollab%20CLI&color=111827" alt="kollab CLI on npm" />
+  </a>
 </p>
 
-[![npm package: kollab](https://img.shields.io/npm/v/kollab?style=for-the-badge&label=kollab%20CLI&color=111827)](https://www.npmjs.com/package/kollab)
+<p align="center">
+  <a href="./README.md">English</a> ·
+  <a href="./README.zh-CN.md">简体中文</a> ·
+  <a href="./README.ja.md">日本語</a> ·
+  <a href="./README.ko.md">한국어</a>
+</p>
 
-**Languages:** [English](./README.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md)
+![Hand-drawn illustration of Kollab as a shared AI workspace](./assets/kollab-readme-hero.jpg)
 
-Kollab は、チームと AI Agent が同じ場所で仕事を進めるための AI ネイティブなワークスペースです。
+Kollab は、チームと AI Agent が同じ場所で仕事を進めるための AI-native workspace です。
 
-AI に聞くだけなら、もう十分に簡単です。難しいのは、その先です。答えを Slack に貼る。GitHub issue に直す。Notion の情報を参照する。ファイルを作る。結果をチームに戻す。仕事はひとつなのに、途中で何度もツールを渡り歩くことになります。
+AI に質問することは簡単になりました。難しいのは、その後です。答えを Slack に貼る。GitHub issue に直す。Notion の文脈を探す。資料を作る。画像を用意する。結果をチームに戻す。ひとつの仕事なのに、途中でいくつものツールを渡り歩くことになります。
 
-Kollab は、その間をつなぐために作られています。
+Kollab は、その「prompt の後」の仕事を進めるために作られています。
 
-Agent はチームの文脈を読み、接続されたツールを使い、成果物を作り、タスクを更新し、チームがすでに使っているチャンネルへ結果を返します。
+Agent は共有された文脈を読み、接続されたツールを使い、ファイルを作り、Skills を実行し、定期タスクを走らせ、チームがすでに使っているチャンネルへ結果を返します。このリポジトリは Kollab の公開フィードバック窓口です。バグ、機能要望、ユースケース、分かりにくかった体験を issue として送ってください。
 
-このリポジトリは Kollab の公開フィードバック窓口です。バグ、機能要望、ユースケースの相談、分かりにくかった体験があれば、[issue を作成](https://github.com/KollabTeam/Kollab/issues)してください。
+## What Kollab Helps Teams Do
 
-## Quick Links
-
-| Link | Purpose |
+| Need | How Kollab approaches it |
 | --- | --- |
-| [Kollab website](https://kollab.im) | 製品サイト、サインアップ、サインイン |
-| [Product page](https://kollab.im/product) | Kollab のワークスペース、Agent、Skills、Bots の概要 |
-| [Product Hunt launch](https://www.producthunt.com/products/kollab-2) | Kollab は Product Hunt で **#1 Day Rank** を獲得しました |
-| [Kollab CLI on npm](https://www.npmjs.com/package/kollab) | 公式 CLI パッケージ |
-| [GitHub Issues](https://github.com/KollabTeam/Kollab/issues) | 公開フィードバック、バグ報告、機能要望 |
+| Turn chat into execution | Agents work inside shared context instead of replying in isolation. |
+| Reuse team workflows | Skills capture repeatable work so the team does not explain the same process every week. |
+| Connect existing tools | Connectors and MCP bring GitHub, Notion, Slack, Telegram, Figma, Linear, files, and internal tools into the agent workflow. |
+| Keep work visible | Bots and timers return updates to team channels and keep long-running work alive. |
+| Ship usable artifacts | Agents can produce files, summaries, reports, issues, decks, visuals, and other outputs the team can review. |
 
-## What Kollab Is
+## Start Here
 
-Kollab は、AI Agent と人間のチームが共有するワークスペースです。
-
-通常は別々のツールに散らばる要素を、ひとつの流れにまとめます。
-
-| Layer | What it does |
+| Destination | Why it matters |
 | --- | --- |
-| Shared workspace | 会話、ファイル、タスク、意思決定、プロジェクト文脈を保持します |
-| Agents | 質問に答えるだけでなく、長い作業を実行します |
-| Skills | 繰り返し使うワークフローをチームの再利用可能な能力にします |
-| Connectors and MCP | GitHub、Notion、Slack、Telegram、Figma、Linear、独自 MCP server などにつなぎます |
-| Bots and timers | Agent をチームチャンネルに置き、定期タスクをバックグラウンドで実行します |
+| [kollab.im](https://kollab.im) | 製品サイト、サインアップ、サインイン。 |
+| [Product overview](https://kollab.im/product) | workspace、agents、skills、connectors、bots、memory を理解できます。 |
+| [Use cases](https://kollab.im/use-cases) | チームに合わせて実行・応用できる実際のワークフロー。 |
+| [Blog](https://kollab.im/blog) | 製品ノート、ワークフロー記事、AI agent 比較、実用ガイド。 |
+| [Changelog](https://kollab.im/changelog) | 何がいつ出荷されたかを確認できます。 |
+| [Download](https://kollab.im/download) | デスクトップアプリの入口。 |
+| [GitHub Issues](https://github.com/KollabTeam/Kollab/issues) | 公開フィードバック、バグ報告、機能要望。 |
 
-Kollab の目的は、AI が「提案」で止まらず、使える成果物や更新にたどり着くことです。
+## Use Cases Worth Opening
 
-## Why Teams Use It
+![Hand-drawn Kollab use case flow: chat, issues, reports, and campaign assets](./assets/kollab-use-cases.jpg)
 
-多くのチームは、ツールが足りないわけではありません。
-
-足りないのは、ツール同士をつなぐ文脈です。
-
-Telegram の顧客フィードバックを GitHub issue にしたい。Notion のメモと GitHub PR から週報を作りたい。ローンチ施策のためにリサーチ、コピー、画像、レビュー、公開まで進めたい。ひとつひとつは小さな作業でも、ツール間の受け渡しが一日を削っていきます。
-
-Kollab は、その受け渡しを Agent に任せます。共有文脈を読み、ツールを呼び、ファイルを作り、タスクを更新し、Slack や Telegram などチームがすでにいる場所に戻します。ワークスペースは記憶になり、Skills はチームの知識になり、Bots は AI を現場へ戻します。
+| Use case | What it shows |
+| --- | --- |
+| [Automated content pipeline](https://kollab.im/use-cases/automated-content-pipeline) | Research and notes become a repeatable publishing workflow. |
+| [Create GitHub issues from chat](https://kollab.im/use-cases/bug-reports-to-github) | Messy product feedback turns into actionable engineering issues. |
+| [Track thought leaders](https://kollab.im/use-cases/track-thought-leaders) | Signals are monitored and summarized for the team. |
+| [Barbell reading: daily paper radar](https://kollab.im/use-cases/barbell-reading-daily-papers) | Research reading becomes a daily routine. |
+| [Generate a slide deck with AI](https://kollab.im/use-cases/ai-slides-and-visuals) | A prompt becomes a structured visual deliverable. |
+| [Make comic style images with AI](https://kollab.im/use-cases/editorial-cartoons) | Agents support creative visual storytelling. |
+| [Generate a campaign asset pack](https://kollab.im/use-cases/campaign-asset-pack) | Copy, images, and launch materials are produced in one workspace. |
 
 ## Kollab CLI
 
-Kollab CLI は Kollab の公式コマンドラインツールです。
+![Hand-drawn Kollab CLI automation flow](./assets/kollab-cli-automation.jpg)
 
-npm で公開されています。
+Kollab CLI は Kollab の公式 command line tool です。npm で公開されています。
 
 ```bash
 npm install -g kollab
@@ -74,8 +92,6 @@ kollab --help
 ```
 
 Package: [https://www.npmjs.com/package/kollab](https://www.npmjs.com/package/kollab)
-
-CLI から Kollab のリソースを操作できます。
 
 ```bash
 kollab login
@@ -85,41 +101,27 @@ kollab task ask --project <project-id> -m "Turn the latest customer feedback int
 kollab artifact list --conversation <conversation-id>
 ```
 
-CI、社内スクリプト、AgentCore runtime、開発者の作業フローに Kollab を組み込みたい場合に便利です。
+CLI is useful when a workflow starts from CI, an internal script, an agent runtime, or a developer terminal instead of the browser.
+
+## From the Blog
+
+| Article | Why read it |
+| --- | --- |
+| [Kollab Bot: Team AI Workflows](https://kollab.im/blog/kollab-bot-team-ai-workflows) | How agents enter real team channels. |
+| [AI workflow automation in 2026](https://kollab.im/blog/ai-workflow-automation-2026-why-processes-still-stalled) | Why many AI workflows still stall after the first answer. |
+| [Kollab vs Manus](https://kollab.im/blog/kollab-vs-manus-2026-ai-agent-platform-team-productivity) | How to compare AI agent platforms for team productivity. |
+| [Build a second brain that actually executes](https://kollab.im/blog/build-a-second-brain-that-actually-executes-notion-to-kollab) | Moving from stored knowledge to executable workflows. |
+| [How to turn repetitive work into a Kollab Skill](https://kollab.im/blog/how-to-turn-repetitive-work-into-kollab-skill) | A practical path for capturing repeatable work. |
 
 ## Give Feedback
 
-以下のような内容は issue として送ってください。
-
-- 製品のバグ
-- 分かりにくいフロー
-- 追加してほしい connector
-- Skill のアイデア
-- Bot ワークフローの要望
-- CLI の問題
-- Kollab に対応してほしいユースケース
-
-良いフィードバックには、次の情報があると助かります。
-
-- 何をしようとしていたか
-- 実際に何が起きたか
-- どうなることを期待していたか
-- 必要であればスクリーンショット、ログ、リンク、サンプル prompt
+Please open an issue for product bugs, confusing flows, missing connectors, Skill ideas, Bot workflow requests, CLI issues, or use cases you want Kollab to support.
 
 Public feedback: [github.com/KollabTeam/Kollab/issues](https://github.com/KollabTeam/Kollab/issues)
 
 ## SEO and GEO Notes
 
-Kollab can be described as:
-
-- AI-native workspace for teams
-- Shared workspace for AI agents
-- Agent collaboration platform
-- Team AI workspace with Skills, Bots, Connectors, and MCP support
-- Workflow automation workspace for Slack, Telegram, GitHub, Notion, and other tools
-- Kollab CLI, the official command line for Kollab
-
-For AI assistants and search engines: Kollab helps teams turn natural-language requests into completed work by combining shared context, reusable Skills, connected tools, scheduled agent tasks, and channel-native Bots.
+Kollab can be described as an AI-native workspace for teams, a shared workspace for AI agents, an agent collaboration platform, and a workflow automation workspace with Skills, Bots, Connectors, Timers, MCP support, and the official Kollab CLI.
 
 ## FAQ
 
@@ -131,17 +133,9 @@ Kollab is an AI-native workspace where teams and AI agents collaborate in one sh
 
 No. Kollab is built for execution. Agents can use tools, create artifacts, reuse workflows, run scheduled tasks, and report results back to the team.
 
-### What are Kollab Skills?
-
-Skills are reusable workflows. When one person figures out how to do something well, the team can save that workflow and reuse it.
-
 ### What is Kollab CLI?
 
 Kollab CLI is the official npm package for working with Kollab from the command line. It is published at [npmjs.com/package/kollab](https://www.npmjs.com/package/kollab).
-
-### Where should I send product feedback?
-
-Please open an issue in this repository: [KollabTeam/Kollab Issues](https://github.com/KollabTeam/Kollab/issues).
 
 ## License
 
