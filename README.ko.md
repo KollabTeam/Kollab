@@ -23,7 +23,7 @@
     <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=1124020&theme=light&period=daily&t=1777014123799" alt="Kollab - Product Hunt #1 Product of the Day" width="250" />
   </a>
   <a href="https://www.npmjs.com/package/kollab">
-    <img src="https://img.shields.io/npm/v/kollab?style=for-the-badge&label=kollab%20CLI&color=111827" alt="kollab CLI on npm" />
+    <img src="https://nodei.co/npm/kollab.svg?mini=true" alt="kollab CLI on npm" />
   </a>
 </p>
 
