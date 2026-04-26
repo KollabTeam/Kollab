@@ -1,6 +1,17 @@
 # Kollab
 
-[![Product Hunt #1 Day Rank](https://img.shields.io/badge/Product%20Hunt-%231%20Day%20Rank-DA552F?style=for-the-badge&logo=producthunt&logoColor=white)](https://www.producthunt.com/products/kollab-2)
+<p align="center">
+  <a href="https://kollab.im">
+    <img src="https://cdn2.kollab.im/website/production-e9343027/_next/static/media/kollab-logo-logomark.8e231ecf.png" alt="Kollab logo" width="96" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.producthunt.com/products/kollab-2">
+    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=1124020&theme=light&period=daily&t=1777014123799" alt="Kollab - Product Hunt #1 Product of the Day" width="250" />
+  </a>
+</p>
+
 [![npm package: kollab](https://img.shields.io/npm/v/kollab?style=for-the-badge&label=kollab%20CLI&color=111827)](https://www.npmjs.com/package/kollab)
 
 **语言:** [English](./README.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md)
