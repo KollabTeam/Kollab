@@ -107,6 +107,16 @@ kollab artifact list --conversation <conversation-id>
 
 CLI 的价值在于，并不是所有 AI 工作流都从浏览器开始。有些从构建任务开始，有些从定时脚本开始，有些就发生在开发者的终端里。
 
+### 作为 agent 技能使用
+
+`kollab-cli` 技能在本仓库开源，它教 AI agent 如何驱动该 CLI。用 skills.sh 包管理器安装：
+
+```bash
+npx skills add KollabTeam/Kollab@kollab-cli
+```
+
+技能源码见 [`skills/kollab-cli/`](./skills/kollab-cli/)。完整介绍：[kollab.im/cli](https://kollab.im/cli)。
+
 ## Blog 里值得读的文章
 
 | 文章 | 为什么读 |

@@ -107,6 +107,18 @@ kollab artifact list --conversation <conversation-id>
 
 The CLI matters because not every useful AI workflow starts in a browser. Some start in a build job, a cron task, a developer terminal, or an internal automation pipeline.
 
+### Use it as an agent skill
+
+The `kollab-cli` skill is open source in this repo. It teaches an AI agent
+how to drive the CLI. Install it with the skills.sh package manager:
+
+```bash
+npx skills add KollabTeam/Kollab@kollab-cli
+```
+
+The skill source lives in [`skills/kollab-cli/`](./skills/kollab-cli/).
+Full overview: [kollab.im/cli](https://kollab.im/cli).
+
 ## From the Blog
 
 | Article | Why read it |

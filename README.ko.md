@@ -103,6 +103,16 @@ kollab artifact list --conversation <conversation-id>
 
 CLI is useful when a workflow starts from CI, an internal script, an agent runtime, or a developer terminal instead of the browser.
 
+### 에이전트 스킬로 사용하기
+
+`kollab-cli` 스킬은 이 저장소에서 오픈소스로 공개되어 있으며, AI 에이전트에게 CLI 사용법을 알려줍니다. skills.sh 패키지 매니저로 설치:
+
+```bash
+npx skills add KollabTeam/Kollab@kollab-cli
+```
+
+스킬 소스: [`skills/kollab-cli/`](./skills/kollab-cli/). 자세히: [kollab.im/cli](https://kollab.im/cli).
+
 ## From the Blog
 
 | Article | Why read it |

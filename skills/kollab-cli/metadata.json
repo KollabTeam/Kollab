@@ -1,0 +1,12 @@
+{
+  "version": "0.1.4",
+  "organization": "KollabTeam",
+  "date": "May 2026",
+  "abstract": "Agent skill for operating a Kollab workspace through the official kollab CLI. Covers auth, spaces, projects, tasks, skills, artifacts, timers, bots, MCP servers, memory, feedback, and prompt-gallery search. Drives the `kollab` npm package; designed for AI agents and automation runtimes.",
+  "references": [
+    "https://kollab.im",
+    "https://kollab.im/cli",
+    "https://www.npmjs.com/package/kollab",
+    "https://github.com/KollabTeam/Kollab"
+  ]
+}
