@@ -1,0 +1,150 @@
+{
+  "zh-CN": {
+    "metadata": {
+      "title": "Word 转 PDF 在线工具：如何将 Word 保存为 PDF | Kollab",
+      "description": "上传 DOC 或 DOCX 文件，在线将 Word 保存为 PDF。保留排版、图片、表格和链接，并了解 Windows、Mac、Word Online、iPad 上导出 PDF 的方法。"
+    },
+    "backLabel": "返回工具",
+    "eyebrow": "DOC / DOCX 转 PDF",
+    "h1": "Word 转 PDF，保留格式在线保存",
+    "description": "上传 Word 文档，把 DOC 或 DOCX 保存为 PDF。适合简历、合同、报告、讲义和需要固定版式的文件。Kollab 会把文件、转换要求和输出结果放在同一个任务中，方便检查、修改和分享。",
+    "primaryCta": "上传 Word 文件",
+    "secondaryCta": "查看保存方法",
+    "heroImageAlt": "Word 文档转换成 PDF 文件的 3D 粘土风插画",
+    "uploadTitle": "上传你的 Word 文件",
+    "uploadDescription": "支持 DOC、DOCX、RTF。拖放文件或点击选择。",
+    "promptLabel": "转换要求",
+    "promptDefault": "将 Word 文档转成 PDF。保留标题、页眉页脚、图片、表格、链接和分页。如果包含批注或修订，请生成干净版本，并说明是否需要 PDF/A、压缩或密码保护。",
+    "chips": ["保留格式", "简历转 PDF", "合同转 PDF", "PDF/A", "表格文档", "批注与修订"],
+    "featuresTitle": "为什么用 Kollab 保存 Word 为 PDF",
+    "featuresIntro": "普通转换器只给你一个下载按钮。Kollab 更适合需要检查、修改和交付的文档工作流。",
+    "features": [
+      ["保留版式", "转换时关注字体、图片、表格、链接、页眉页脚和分页，减少发给别人后排版变化的问题。"],
+      ["带着要求转换", "你可以说明是否隐藏批注、接受修订、生成 PDF/A、压缩文件或准备打印版本。"],
+      ["结果可继续处理", "转换后的 PDF 可以继续进入 Kollab 的其他任务，例如压缩、摘要、提取 Markdown 文档或生成交付说明。"]
+    ],
+    "stepsTitle": "在线 Word 转 PDF 的 4 个步骤",
+    "stepsIntro": "如果你想知道 how to save a word document as a pdf，可以直接上传文件在线转换，也可以参考下面的手动保存方法。",
+    "steps": [
+      ["上传文档", "选择 DOC、DOCX 或 RTF 文件。简历、合同、报告和表格文档都可以开始处理。"],
+      ["说明要求", "告诉 Kollab 是否需要保留批注、接受修订、生成 PDF/A、压缩体积或保留链接。"],
+      ["运行转换", "Kollab 会把文件、指令和输出放在同一任务中，便于回看上下文和继续修改。"],
+      ["检查下载", "确认分页、图片、表格、页码和链接无误后，下载可分享、打印或归档的 PDF。"]
+    ],
+    "faq": [
+      ["如何把 Word 文档保存为 PDF？", "在 Word 中打开文件，选择“文件”里的“另存为”或“保存副本”，文件类型选择 PDF 后保存。也可以上传 DOC、DOCX 文件到 Kollab 在线转换。"],
+      ["Word 转 PDF 会不会丢格式？", "大多数文档可以保留格式。复杂文档需要特别检查字体、横向页面、跨页表格、图片清晰度、页眉页脚和目录链接。"]
+    ]
+  },
+  "en": {
+    "metadata": {
+      "title": "Word to PDF Converter: Save a Word Document as a PDF | Kollab",
+      "description": "Upload a DOC or DOCX file and save it as a PDF online. Keep formatting, images, tables, and links, with tips for Windows, Mac, Word Online, and iPad."
+    },
+    "backLabel": "Back to tools",
+    "eyebrow": "DOC / DOCX to PDF",
+    "h1": "Convert Word to PDF without losing the layout",
+    "description": "Upload a Word document and save it as a PDF. It is useful for resumes, contracts, reports, handouts, and any file that needs a stable layout. Kollab keeps the file, instructions, and result together so you can review, revise, and share the final PDF.",
+    "primaryCta": "Upload Word file",
+    "secondaryCta": "See save options",
+    "heroImageAlt": "3D clay illustration of a Word document turning into a PDF file",
+    "uploadTitle": "Upload your Word file",
+    "uploadDescription": "Supports DOC, DOCX, and RTF. Drop a file here or choose one from your device.",
+    "promptLabel": "Conversion instructions",
+    "promptDefault": "Convert this Word document to PDF. Keep headings, headers, footers, images, tables, links, and page breaks. If the file includes comments or tracked changes, create a clean version and mention whether PDF/A, compression, or password protection is needed.",
+    "chips": ["Keep formatting", "Resume to PDF", "Contract to PDF", "PDF/A", "Table-heavy file", "Comments and changes"],
+    "featuresTitle": "Why save Word as PDF with Kollab",
+    "featuresIntro": "A basic converter gives you a download button. Kollab is better when the document still needs review, cleanup, or delivery notes.",
+    "features": [
+      ["Preserve the layout", "Keep an eye on fonts, images, tables, links, headers, footers, and page breaks before you send the file."],
+      ["Convert with context", "Specify whether to hide comments, accept tracked changes, create PDF/A, compress the file, or prepare a print-ready version."],
+      ["Keep working after export", "Send the finished PDF into other Kollab tasks, such as compression, summarization, Markdown extraction, or delivery notes."]
+    ],
+    "stepsTitle": "Convert Word to PDF in 4 steps",
+    "stepsIntro": "If you searched for how to save a word document as a pdf, you can upload the file here or follow the manual save methods below.",
+    "steps": [
+      ["Upload the document", "Choose a DOC, DOCX, or RTF file. Resumes, contracts, reports, and table-heavy documents are all supported."],
+      ["Add instructions", "Tell Kollab whether to keep comments, accept tracked changes, create PDF/A, compress the file, or preserve links."],
+      ["Run the conversion", "Kollab keeps the file, instructions, and output together so the context stays easy to review."],
+      ["Check and download", "Review page breaks, images, tables, page numbers, and links, then download the PDF."]
+    ],
+    "faq": [
+      ["How do I save a Word document as a PDF?", "Open the file in Word, choose Save As or Save a Copy, select PDF as the file type, and save. You can also upload a DOC or DOCX file to Kollab and convert it online."],
+      ["Will Word to PDF conversion change my formatting?", "Most documents keep their formatting. Complex files should be checked for fonts, landscape pages, tables across pages, image quality, headers, footers, and linked tables of contents."]
+    ]
+  },
+  "ja": {
+    "metadata": {
+      "title": "Word を PDF に変換：Word 文書を PDF として保存 | Kollab",
+      "description": "DOC または DOCX ファイルをアップロードして、オンラインで PDF に変換できます。レイアウト、画像、表、リンクを保ちながら、Windows、Mac、Word Online、iPad での保存方法も確認できます。"
+    },
+    "backLabel": "ツール一覧へ戻る",
+    "eyebrow": "DOC / DOCX から PDF",
+    "h1": "Word を PDF に変換し、レイアウトを保ったまま保存",
+    "description": "Word 文書をアップロードして PDF として保存できます。履歴書、契約書、レポート、配布資料など、見た目を崩さず共有したい文書に向いています。Kollab ではファイル、変換指示、出力結果を同じ作業の中で扱えるため、確認や修正、共有まで進めやすくなります。",
+    "primaryCta": "Word ファイルをアップロード",
+    "secondaryCta": "保存方法を見る",
+    "heroImageAlt": "Word 文書を PDF ファイルに変換する 3D クレイ風イラスト",
+    "uploadTitle": "Word ファイルをアップロード",
+    "uploadDescription": "DOC、DOCX、RTF に対応。ファイルをドラッグするか、クリックして選択してください。",
+    "promptLabel": "変換の指示",
+    "promptDefault": "この Word 文書を PDF に変換してください。見出し、ヘッダー、フッター、画像、表、リンク、改ページを保ってください。コメントや変更履歴が含まれる場合は、クリーンな版を作成し、PDF/A、圧縮、パスワード保護が必要かも確認してください。",
+    "chips": ["レイアウト保持", "履歴書を PDF に", "契約書を PDF に", "PDF/A", "表を含む文書", "コメントと変更履歴"],
+    "featuresTitle": "Kollab で Word を PDF に保存する理由",
+    "featuresIntro": "一般的な変換ツールはダウンロードで終わります。Kollab は、確認や修正、提出まで含めて扱いたい文書に向いています。",
+    "features": [
+      ["レイアウトを保つ", "フォント、画像、表、リンク、ヘッダー、フッター、改ページを確認しながら、共有後の崩れを減らします。"],
+      ["指示つきで変換", "コメントを非表示にするか、変更履歴を反映するか、PDF/A、圧縮、印刷用 PDF が必要かを指定できます。"],
+      ["出力後も続けて作業", "作成した PDF は、圧縮、要約、Markdown 抽出、提出メモ作成など、Kollab の別タスクに続けられます。"]
+    ],
+    "stepsTitle": "Word を PDF に変換する 4 つの手順",
+    "stepsIntro": "Word 文書を PDF として保存したい場合は、ここでファイルをアップロードして変換するか、下の手動保存方法を確認できます。",
+    "steps": [
+      ["文書をアップロード", "DOC、DOCX、RTF ファイルを選択します。履歴書、契約書、レポート、表を含む文書にも使えます。"],
+      ["指示を追加", "コメント、変更履歴、PDF/A、圧縮、リンク保持など、必要な条件を伝えます。"],
+      ["変換を実行", "Kollab がファイル、指示、出力結果を同じ作業内にまとめます。"],
+      ["確認してダウンロード", "改ページ、画像、表、ページ番号、リンクを確認してから PDF をダウンロードします。"]
+    ],
+    "faq": [
+      ["Word 文書を PDF として保存するには？", "Word でファイルを開き、「名前を付けて保存」または「コピーを保存」を選び、ファイル形式で PDF を選択します。DOC または DOCX ファイルを Kollab にアップロードしてオンライン変換することもできます。"],
+      ["Word から PDF に変換するとレイアウトは崩れますか？", "多くの文書ではレイアウトを保てます。複雑な文書では、フォント、横向きページ、複数ページにまたがる表、画像品質、ヘッダー、フッター、目次リンクを確認してください。"]
+    ]
+  },
+  "ko": {
+    "metadata": {
+      "title": "Word를 PDF로 변환: Word 문서를 PDF로 저장 | Kollab",
+      "description": "DOC 또는 DOCX 파일을 업로드해 온라인에서 PDF로 저장하세요. 서식, 이미지, 표, 링크를 유지하고 Windows, Mac, Word Online, iPad에서 저장하는 방법도 확인할 수 있습니다."
+    },
+    "backLabel": "도구로 돌아가기",
+    "eyebrow": "DOC / DOCX를 PDF로",
+    "h1": "Word를 PDF로 변환하고 서식을 그대로 유지하세요",
+    "description": "Word 문서를 업로드해 PDF로 저장하세요. 이력서, 계약서, 보고서, 강의 자료처럼 레이아웃이 고정되어야 하는 문서에 적합합니다. Kollab은 파일, 변환 요청, 결과물을 한 작업 안에 모아 검토, 수정, 공유까지 이어가기 쉽게 해줍니다.",
+    "primaryCta": "Word 파일 업로드",
+    "secondaryCta": "저장 방법 보기",
+    "heroImageAlt": "Word 문서를 PDF 파일로 변환하는 3D 클레이 스타일 일러스트",
+    "uploadTitle": "Word 파일 업로드",
+    "uploadDescription": "DOC, DOCX, RTF를 지원합니다. 파일을 끌어 놓거나 클릭해서 선택하세요.",
+    "promptLabel": "변환 요청",
+    "promptDefault": "이 Word 문서를 PDF로 변환해 주세요. 제목, 머리글, 바닥글, 이미지, 표, 링크, 페이지 나눔을 유지해 주세요. 댓글이나 변경 내용이 포함되어 있다면 정리된 버전을 만들고 PDF/A, 압축, 비밀번호 보호가 필요한지도 확인해 주세요.",
+    "chips": ["서식 유지", "이력서를 PDF로", "계약서를 PDF로", "PDF/A", "표가 많은 문서", "댓글과 변경 내용"],
+    "featuresTitle": "Kollab으로 Word를 PDF로 저장하는 이유",
+    "featuresIntro": "일반 변환기는 다운로드 버튼에서 끝납니다. Kollab은 문서를 검토하고 정리한 뒤 전달해야 할 때 더 잘 맞습니다.",
+    "features": [
+      ["레이아웃 유지", "글꼴, 이미지, 표, 링크, 머리글, 바닥글, 페이지 나눔을 확인해 공유 후 서식이 흐트러지는 일을 줄입니다."],
+      ["요청 사항과 함께 변환", "댓글 숨김, 변경 내용 적용, PDF/A 생성, 파일 압축, 인쇄용 PDF 준비 같은 조건을 지정할 수 있습니다."],
+      ["변환 후에도 이어서 작업", "완성된 PDF를 압축, 요약, Markdown 추출, 전달 메모 작성 등 Kollab의 다른 작업으로 이어갈 수 있습니다."]
+    ],
+    "stepsTitle": "Word를 PDF로 변환하는 4단계",
+    "stepsIntro": "Word 문서를 PDF로 저장하고 싶다면 파일을 업로드해 바로 변환하거나, 아래의 수동 저장 방법을 확인하세요.",
+    "steps": [
+      ["문서 업로드", "DOC, DOCX, RTF 파일을 선택하세요. 이력서, 계약서, 보고서, 표가 많은 문서도 처리할 수 있습니다."],
+      ["요청 사항 입력", "댓글, 변경 내용, PDF/A, 압축, 링크 유지 등 필요한 조건을 Kollab에 알려 주세요."],
+      ["변환 실행", "Kollab은 파일, 요청 사항, 결과물을 한 작업 안에 모아 맥락을 쉽게 확인할 수 있게 합니다."],
+      ["확인 후 다운로드", "페이지 나눔, 이미지, 표, 페이지 번호, 링크를 확인한 뒤 PDF를 다운로드하세요."]
+    ],
+    "faq": [
+      ["Word 문서를 PDF로 저장하려면 어떻게 하나요?", "Word에서 파일을 열고 “다른 이름으로 저장” 또는 “복사본 저장”을 선택한 뒤 파일 형식에서 PDF를 고르면 됩니다. DOC 또는 DOCX 파일을 Kollab에 업로드해 온라인으로 변환할 수도 있습니다."],
+      ["Word를 PDF로 변환하면 서식이 바뀌나요?", "대부분의 문서는 서식을 유지합니다. 복잡한 문서는 글꼴, 가로 페이지, 여러 페이지에 걸친 표, 이미지 품질, 머리글, 바닥글, 목차 링크를 확인하는 것이 좋습니다."]
+    ]
+  }
+}

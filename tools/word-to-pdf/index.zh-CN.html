@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word 转 PDF 在线工具：如何将 Word 保存为 PDF | Kollab</title>
+  <meta name="description" content="上传 DOC 或 DOCX 文件，在线将 Word 保存为 PDF。保留排版、图片、表格和链接，并了解 Windows、Mac、Word Online、iPad 上导出 PDF 的方法。">
+  <link rel="canonical" href="https://kollab.im/zh/tools/word-to-pdf">
+  <link rel="alternate" hreflang="zh-CN" href="https://kollab.im/zh/tools/word-to-pdf">
+  <link rel="alternate" hreflang="en" href="https://kollab.im/tools/word-to-pdf">
+  <link rel="alternate" hreflang="ja" href="https://kollab.im/ja/tools/word-to-pdf">
+  <link rel="alternate" hreflang="ko" href="https://kollab.im/ko/tools/word-to-pdf">
+  <link rel="alternate" hreflang="x-default" href="https://kollab.im/tools/word-to-pdf">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kollab">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="Word 转 PDF 在线工具：如何将 Word 保存为 PDF | Kollab">
+  <meta property="og:description" content="上传 DOC 或 DOCX 文件，在线将 Word 保存为 PDF。保留排版、图片、表格和链接，也可查看不同设备上的保存方法。">
+  <meta property="og:url" content="https://kollab.im/zh/tools/word-to-pdf">
+  <meta property="og:image" content="https://kollab.im/images/tools/word-to-pdf-clay-hero-transparent.png">
+  <meta property="og:image:alt" content="Word 文档转换成 PDF 文件的 3D 粘土风插画">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Word 转 PDF 在线工具：如何将 Word 保存为 PDF | Kollab">
+  <meta name="twitter:description" content="上传 Word 文档，在线保存为 PDF，并保留排版、图片、表格和链接。">
+  <meta name="twitter:image" content="https://kollab.im/images/tools/word-to-pdf-clay-hero-transparent.png">
+  <meta name="twitter:image:alt" content="Word 文档转换成 PDF 文件的 3D 粘土风插画">
+  <style>
+    :root {
+      --bg: #f7f5ef;
+      --surface: #fffdf8;
+      --surface-strong: #ffffff;
+      --ink: #1f2933;
+      --muted: #667085;
+      --line: #ded8cb;
+      --brand: #155eef;
+      --brand-dark: #0b3ea8;
+      --green: #2e7d63;
+      --amber: #a86213;
+      --rose: #b3485c;
+      --shadow: 0 18px 48px rgba(31, 41, 51, .08);
+      --shadow-soft: 0 12px 30px rgba(31, 41, 51, .07);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.56), rgba(255,255,255,0) 360px),
+        var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .shell { max-width: 1180px; margin: 0 auto; padding: 24px; }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 10px 0 22px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+    .mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: #111827;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .nav .primary {
+      background: #111827;
+      color: #fff;
+      padding: 8px 13px;
+      border-radius: 7px;
+    }
+
+    .breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, .92fr) minmax(390px, 1.08fr);
+      gap: 38px;
+      align-items: center;
+      padding: 10px 0 38px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.55);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 650;
+    }
+    h1 {
+      margin: 16px 0 16px;
+      font-size: clamp(40px, 5.4vw, 66px);
+      line-height: 1.02;
+      letter-spacing: 0;
+      max-width: 820px;
+    }
+    .lead {
+      max-width: 610px;
+      color: var(--muted);
+      font-size: 17px;
+      margin: 0 0 22px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-visual {
+      margin: 18px 0 -10px;
+      max-width: 560px;
+      aspect-ratio: 16 / 10;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      overflow: visible;
+    }
+    .hero-visual img {
+      width: min(100%, 540px);
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 24px 30px rgba(31, 41, 51, .14));
+    }
+    .button {
+      border: 1px solid #111827;
+      border-radius: 7px;
+      padding: 11px 16px;
+      font-weight: 700;
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      background: #111827;
+      color: #fff;
+    }
+    .button.secondary {
+      background: transparent;
+      color: #111827;
+      border-color: var(--line);
+    }
+
+    .tool {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      position: relative;
+    }
+    .tool:before {
+      content: "";
+      position: absolute;
+      inset: 10px;
+      border: 1px solid rgba(21, 94, 239, .08);
+      border-radius: 6px;
+      pointer-events: none;
+    }
+    .dropzone {
+      border: 1.5px dashed #bdb4a5;
+      border-radius: var(--radius);
+      background: #fbfaf6;
+      min-height: 205px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 26px;
+    }
+    .upload-icon {
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 16px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: #e8efff;
+      color: var(--brand);
+      font-size: 24px;
+    }
+    .dropzone strong { display: block; font-size: 19px; margin-bottom: 5px; }
+    .dropzone p { margin: 0; color: var(--muted); }
+    .prompt {
+      margin-top: 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      background: #fff;
+    }
+    .prompt label {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .prompt textarea {
+      width: 100%;
+      min-height: 104px;
+      border: 0;
+      resize: vertical;
+      outline: 0;
+      font: inherit;
+      color: var(--ink);
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: #fff;
+      color: #4b5563;
+      font-size: 13px;
+    }
+
+    section { padding: 44px 0; }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+    h2 { font-size: clamp(27px, 3.5vw, 40px); line-height: 1.12; margin: 0; letter-spacing: 0; max-width: 720px; }
+    .section-copy { color: var(--muted); margin: 0; max-width: 560px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow-soft);
+    }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+    .number {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: #111827;
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .method {
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr);
+      gap: 18px;
+      padding: 20px 0;
+      border-top: 1px solid var(--line);
+    }
+    .method:last-child { border-bottom: 1px solid var(--line); }
+    .method strong { font-size: 17px; }
+    .method ol { margin: 0; padding-left: 20px; color: var(--muted); }
+    .method li + li { margin-top: 4px; }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .check {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      color: #344054;
+    }
+    .check:before { content: "✓"; color: var(--green); font-weight: 900; margin-right: 8px; }
+
+    details {
+      border-top: 1px solid var(--line);
+      padding: 18px 0;
+    }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary {
+      cursor: pointer;
+      font-weight: 750;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    summary:after { content: "+"; color: var(--muted); }
+    details[open] summary:after { content: "-"; }
+    details p { margin: 10px 0 0; color: var(--muted); max-width: 760px; }
+
+    .cta {
+      background: #111827;
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .cta h2 { color: #fff; }
+    .cta p { color: #cbd5e1; margin: 8px 0 0; }
+    .cta .button { background: #fff; color: #111827; border-color: #fff; }
+    footer { padding: 36px 0 56px; color: var(--muted); font-size: 14px; }
+
+    @media (max-width: 840px) {
+      .shell { padding: 18px; }
+      .nav { display: none; }
+      .hero, .grid-3, .grid-2, .checklist { grid-template-columns: 1fr; }
+      .hero { gap: 22px; padding-bottom: 22px; }
+      h1 { font-size: clamp(38px, 12vw, 52px); }
+      .lead { font-size: 16px; }
+      .hero-actions .button { width: 100%; justify-content: center; }
+      .hero-visual { margin: 14px auto -8px; justify-content: center; max-width: 430px; }
+      .hero-visual img { width: min(100%, 430px); }
+      .section-head { align-items: start; flex-direction: column; }
+      .method { grid-template-columns: 1fr; }
+      .cta { align-items: start; flex-direction: column; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://kollab.im/zh/tools/word-to-pdf#app",
+        "name": "Kollab Word 转 PDF",
+        "applicationCategory": "DocumentApplication",
+        "operatingSystem": "Web",
+        "url": "https://kollab.im/zh/tools/word-to-pdf",
+        "description": "上传 DOC 或 DOCX 文件，在线将 Word 文档保存为 PDF。"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://kollab.im/zh/tools/word-to-pdf#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://kollab.im/zh"},
+          {"@type": "ListItem", "position": 2, "name": "工具", "item": "https://kollab.im/zh/tools"},
+          {"@type": "ListItem", "position": 3, "name": "Word 转 PDF", "item": "https://kollab.im/zh/tools/word-to-pdf"}
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://kollab.im/zh/tools/word-to-pdf#howto",
+        "name": "如何将 Word 文档保存为 PDF",
+        "description": "使用 Word 内置导出功能，或上传 DOC、DOCX 文件在线转换为 PDF。",
+        "step": [
+          {"@type": "HowToStep", "name": "打开或上传文档", "text": "在 Word 中打开文档，或将 DOC、DOCX 文件上传到 Kollab。"},
+          {"@type": "HowToStep", "name": "选择 PDF 输出", "text": "在 Word 中选择另存为 PDF，或在 Kollab 中说明需要保留的排版、批注和链接。"},
+          {"@type": "HowToStep", "name": "检查并下载", "text": "确认分页、图片、表格和链接无误后下载 PDF。"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://kollab.im/zh/tools/word-to-pdf#faq",
+        "mainEntity": [
+          {"@type": "Question", "name": "如何把 Word 文档保存为 PDF？", "acceptedAnswer": {"@type": "Answer", "text": "在 Word 中打开文件，选择“文件”里的“另存为”或“保存副本”，文件类型选择 PDF 后保存。也可以上传 DOC、DOCX 文件到 Kollab 在线转换。"}},
+          {"@type": "Question", "name": "Word 转 PDF 会不会丢格式？", "acceptedAnswer": {"@type": "Answer", "text": "大多数文档可以保留格式。复杂文档需要特别检查字体、横向页面、跨页表格、图片清晰度、页眉页脚和目录链接。"}},
+          {"@type": "Question", "name": "iPad 上怎么把 Word 保存为 PDF？", "acceptedAnswer": {"@type": "Answer", "text": "在 Word 应用中打开文档，通过分享、导出或打印菜单选择 PDF，然后保存到文件或发送给他人。"}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="mark">K</span><span>Kollab</span></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#">产品</a>
+        <a href="#">工具</a>
+        <a href="#">用例</a>
+        <a href="#">博客</a>
+        <a class="primary" href="#">打开 Kollab</a>
+      </nav>
+    </header>
+
+    <a class="breadcrumb" href="#">← 返回工具</a>
+
+    <section class="hero">
+      <div>
+        <span class="eyebrow">DOC / DOCX 转 PDF</span>
+        <h1>Word 转 PDF，保留格式在线保存</h1>
+        <p class="lead">上传 Word 文档，把 DOC 或 DOCX 保存为 PDF。适合简历、合同、报告、讲义和需要固定版式的文件。Kollab 会把文件、转换要求和输出结果放在同一个任务中，方便检查、修改和分享。</p>
+        <div class="hero-actions">
+          <a class="button" href="#">上传 Word 文件</a>
+          <a class="button secondary" href="#methods">查看保存方法</a>
+        </div>
+        <figure class="hero-visual" aria-label="Word 文档转换成 PDF 文件的 3D 插画">
+          <img src="./word-to-pdf-clay-hero-transparent.png" alt="Word 文档转换成 PDF 文件的 3D 粘土风插画">
+        </figure>
+      </div>
+
+      <aside class="tool" aria-label="Word 转 PDF 工具">
+        <div class="dropzone">
+          <div>
+            <div class="upload-icon">↑</div>
+            <strong>上传你的 Word 文件</strong>
+            <p>支持 DOC、DOCX、RTF。拖放文件或点击选择。</p>
+          </div>
+        </div>
+        <div class="prompt">
+          <label for="prompt">转换要求</label>
+          <textarea id="prompt">将 Word 文档转成 PDF。保留标题、页眉页脚、图片、表格、链接和分页。如果包含批注或修订，请生成干净版本，并说明是否需要 PDF/A、压缩或密码保护。</textarea>
+        </div>
+        <div class="chips">
+          <span class="chip">保留格式</span>
+          <span class="chip">简历转 PDF</span>
+          <span class="chip">合同转 PDF</span>
+          <span class="chip">PDF/A</span>
+          <span class="chip">含表格文档</span>
+          <span class="chip">批注与修订</span>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>为什么用 Kollab 保存 Word 为 PDF</h2>
+        <p class="section-copy">普通转换器只给你一个下载按钮。Kollab 更适合需要检查、修改和交付的文档工作流。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <h3>保留版式</h3>
+          <p>转换时关注字体、图片、表格、链接、页眉页脚和分页，减少发给别人后排版变化的问题。</p>
+        </article>
+        <article class="card">
+          <h3>带着要求转换</h3>
+          <p>你可以说明是否隐藏批注、接受修订、生成 PDF/A、压缩文件或准备打印版本。</p>
+        </article>
+        <article class="card">
+          <h3>结果可继续处理</h3>
+          <p>转换后的 PDF 可以继续进入 Kollab 的其他任务，例如压缩、摘要、提取 Markdown 文档或生成交付说明。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>在线 Word 转 PDF 的 4 个步骤</h2>
+        <p class="section-copy">如果你想知道 how to save a word document as a pdf，可以直接上传文件在线转换，也可以参考下面的手动保存方法。</p>
+      </div>
+      <div class="grid-2">
+        <article class="card"><div class="number">1</div><h3>上传文档</h3><p>选择 DOC、DOCX 或 RTF 文件。简历、合同、报告和表格文档都可以开始处理。</p></article>
+        <article class="card"><div class="number">2</div><h3>说明要求</h3><p>告诉 Kollab 是否需要保留批注、接受修订、生成 PDF/A、压缩体积或保留链接。</p></article>
+        <article class="card"><div class="number">3</div><h3>运行转换</h3><p>Kollab 会把文件、指令和输出放在同一任务中，便于回看上下文和继续修改。</p></article>
+        <article class="card"><div class="number">4</div><h3>检查下载</h3><p>确认分页、图片、表格、页码和链接无误后，下载可分享、打印或归档的 PDF。</p></article>
+      </div>
+    </section>
+
+    <section id="methods">
+      <div class="section-head">
+        <h2>如何将 Word 文档保存为 PDF</h2>
+        <p class="section-copy">如果你想在 Microsoft Word 里手动完成，下面是不同设备上的常见路径。</p>
+      </div>
+      <div class="method">
+        <strong>Windows 版 Word</strong>
+        <ol>
+          <li>打开文档，点击“文件”。</li>
+          <li>选择“另存为”或“保存副本”。</li>
+          <li>在文件类型中选择 PDF。</li>
+          <li>点击“保存”，检查导出的 PDF。</li>
+        </ol>
+      </div>
+      <div class="method">
+        <strong>Mac 版 Word</strong>
+        <ol>
+          <li>打开“文件”菜单，选择“另存为”。</li>
+          <li>在文件格式中选择 PDF。</li>
+          <li>选择在线发布或打印质量。</li>
+          <li>保存后检查分页和图片。</li>
+        </ol>
+      </div>
+      <div class="method">
+        <strong>Word Online</strong>
+        <ol>
+          <li>打开文档，进入“文件”。</li>
+          <li>选择“导出”或“打印”。</li>
+          <li>下载 PDF 或通过浏览器打印为 PDF。</li>
+        </ol>
+      </div>
+      <div class="method">
+        <strong>iPad / iPhone</strong>
+        <ol>
+          <li>打开 Word 文档。</li>
+          <li>点击分享或更多菜单。</li>
+          <li>选择发送副本、导出或打印。</li>
+          <li>选择 PDF 并保存到文件或分享给他人。</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>转换前检查这些细节</h2>
+        <p class="section-copy">这些问题最容易造成“我明明转成 PDF 了，但发出去不对”的情况。</p>
+      </div>
+      <div class="checklist">
+        <div class="check">字体是否能正确嵌入</div>
+        <div class="check">图片和图表是否足够清晰</div>
+        <div class="check">页眉、页脚和页码是否正确</div>
+        <div class="check">表格是否跨页断裂</div>
+        <div class="check">批注和修订是否需要隐藏</div>
+        <div class="check">链接是否需要保留为可点击</div>
+        <div class="check">是否需要 PDF/A 归档格式</div>
+        <div class="check">是否需要压缩或密码保护</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>适合这些 Word 文档</h2>
+        <p class="section-copy">从“保存为 PDF”的简单动作，延伸到真实的文档交付场景。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card"><h3>简历和作品集</h3><p>避免招聘系统或收件人电脑上的字体差异影响版式。</p></article>
+        <article class="card"><h3>合同和报价单</h3><p>固定条款、签名区、页码和附件顺序，便于发送和归档。</p></article>
+        <article class="card"><h3>报告和论文</h3><p>保留目录、脚注、图片编号、表格和引用链接。</p></article>
+        <article class="card"><h3>培训材料</h3><p>把讲义、手册和操作文档变成更容易分享的 PDF。</p></article>
+        <article class="card"><h3>表格文档</h3><p>检查横向页面、跨页表格、页边距和打印区域。</p></article>
+        <article class="card"><h3>归档文件</h3><p>选择 PDF/A、压缩或加密，把文档整理成可长期保存的版本。</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>相关工具</h2>
+        <p class="section-copy">Word 转 PDF 之后，可以继续处理你的文档。</p>
+      </div>
+      <div class="grid-3">
+        <a class="card" href="#"><h3>PDF 转 Markdown</h3><p>把 PDF 内容提取成可编辑、可复用的 Markdown 文档。</p></a>
+        <a class="card" href="#"><h3>Markdown 转 PDF</h3><p>把 Markdown 文档、说明和报告导出成可分享的 PDF。</p></a>
+        <a class="card" href="#"><h3>PDF 压缩</h3><p>在发送邮件或上传系统前减小 PDF 文件体积。</p></a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p class="section-copy">覆盖 SERP 中最常见的 long-tail 搜索需求。</p>
+      </div>
+      <details open>
+        <summary>如何把 Word 文档保存为 PDF？</summary>
+        <p>在 Word 中打开文件，选择“文件”里的“另存为”或“保存副本”，文件类型选择 PDF 后保存。也可以上传 DOC、DOCX 文件到 Kollab 在线转换。</p>
+      </details>
+      <details>
+        <summary>可以免费在线把 Word 转 PDF 吗？</summary>
+        <p>可以。你可以使用在线工具上传 Word 文件并转换为 PDF。对于重要文档，建议转换后检查分页、字体、图片和表格。</p>
+      </details>
+      <details>
+        <summary>Word 转 PDF 会不会丢格式？</summary>
+        <p>大多数文档可以保留格式。复杂文档需要特别检查字体、横向页面、跨页表格、图片清晰度、页眉页脚和目录链接。</p>
+      </details>
+      <details>
+        <summary>iPad 上怎么把 Word 保存为 PDF？</summary>
+        <p>在 Word 应用中打开文档，通过分享、导出或打印菜单选择 PDF，然后保存到文件或发送给他人。</p>
+      </details>
+      <details>
+        <summary>什么是 PDF/A？什么时候需要？</summary>
+        <p>PDF/A 是适合长期归档的 PDF 标准。合同、档案、正式报告和需要长期保存的文件，可以考虑导出为 PDF/A。</p>
+      </details>
+      <details>
+        <summary>批注和修订会出现在 PDF 里吗？</summary>
+        <p>取决于导出设置。如果文档含有批注或修订，建议先确认是否需要接受修订、隐藏批注，或生成带标记的审阅版本。</p>
+      </details>
+    </section>
+
+    <section class="cta">
+      <div>
+        <h2>把 Word 文档变成可交付的 PDF</h2>
+        <p>上传文件，说明转换要求，Kollab 会帮你把文档、上下文和输出结果放在一起。</p>
+      </div>
+      <a class="button" href="#">开始转换</a>
+    </section>
+
+    <footer>
+      <p>Kollab 可以帮助你把文档转换、检查和交付放在同一个工作流里。</p>
+    </footer>
+  </main>
+</body>
+</html>
