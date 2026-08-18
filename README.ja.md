@@ -64,7 +64,27 @@ Agent は共有された文脈を読み、接続されたツールを使い、�
 | [Blog](https://kollab.im/blog) | 製品ノート、ワークフロー記事、AI agent 比較、実用ガイド。 |
 | [Changelog](https://kollab.im/changelog) | 何がいつ出荷されたかを確認できます。 |
 | [Download](https://kollab.im/download) | デスクトップアプリの入口。 |
+| [Kollab デスクトップ](https://github.com/KollabTeam/Kollab/releases/tag/desktop) | macOS 版デスクトップアプリ（開発版、直接ダウンロード）。 |
 | [GitHub Issues](https://github.com/KollabTeam/Kollab/issues) | 公開フィードバック、バグ報告、機能要望。 |
+
+## Kollab デスクトップ（開発版）
+
+Kollab のデスクトップアプリは現在**開発版**として公開しています。署名と Apple の公証を通した
+実際のビルドで、私たち自身も日常的に使っています。粗い部分は残っていますが、改善は速く進みます。
+インストールは一度だけで、あとはバックグラウンドで自動更新されます。
+
+| プラットフォーム | 状態 | ダウンロード |
+| --- | --- | --- |
+| macOS（Apple シリコン） | 開発版 | **[.dmg をダウンロード](https://github.com/KollabTeam/Kollab/releases/download/desktop/Kollab-mac-arm64.dmg)** |
+| macOS（Intel） | 未提供 | — |
+| Windows | 未提供 | — |
+| Linux | 開発中 | — |
+
+すべてのインストーラーは同じローリングリリースにあります：[https://github.com/KollabTeam/Kollab/releases/tag/desktop](https://github.com/KollabTeam/Kollab/releases/tag/desktop)
+
+デスクトップ版が必要な理由は、あなた自身のパソコンを Kollab が操作できる唯一の入口だからです。
+明示的に許可したフォルダーであれば、エージェントがファイルを読み書きできます。会話から始まった作業を、
+ダウンロードリンクで止めずに、そのまま手元のマシンで完了できます。
 
 ## Use Cases Worth Opening
 

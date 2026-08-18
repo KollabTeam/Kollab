@@ -64,7 +64,27 @@ Agent는 shared context를 읽고, 연결된 도구를 호출하고, 파일을 �
 | [Blog](https://kollab.im/blog) | 제품 노트, workflow 글, AI agent 비교, 실용 가이드. |
 | [Changelog](https://kollab.im/changelog) | 무엇이 언제 shipped 되었는지 확인할 수 있습니다. |
 | [Download](https://kollab.im/download) | 데스크톱 앱 다운로드. |
+| [Kollab 데스크톱](https://github.com/KollabTeam/Kollab/releases/tag/desktop) | macOS 데스크톱 앱 — 개발자 프리뷰, 바로 내려받기. |
 | [GitHub Issues](https://github.com/KollabTeam/Kollab/issues) | 공개 피드백, 버그 리포트, 기능 요청. |
+
+## Kollab 데스크톱 (개발자 프리뷰)
+
+Kollab 데스크톱 앱은 현재 **개발자 프리뷰**로 제공됩니다. 서명과 Apple 공증을 마친 실제 빌드이며,
+저희도 매일 사용하고 있습니다. 다듬어야 할 부분이 남아 있지만 개선 속도는 빠릅니다.
+한 번만 설치하면 이후에는 백그라운드에서 자동으로 업데이트됩니다.
+
+| 플랫폼 | 상태 | 다운로드 |
+| --- | --- | --- |
+| macOS (Apple 실리콘) | 개발자 프리뷰 | **[.dmg 내려받기](https://github.com/KollabTeam/Kollab/releases/download/desktop/Kollab-mac-arm64.dmg)** |
+| macOS (Intel) | 아직 제공되지 않음 | — |
+| Windows | 아직 제공되지 않음 | — |
+| Linux | 개발 중 | — |
+
+모든 설치 파일은 하나의 롤링 릴리스에 있습니다: [https://github.com/KollabTeam/Kollab/releases/tag/desktop](https://github.com/KollabTeam/Kollab/releases/tag/desktop)
+
+데스크톱 앱이 필요한 이유는, Kollab이 사용자의 컴퓨터를 직접 다룰 수 있는 유일한 통로이기 때문입니다.
+명시적으로 허용한 폴더에 한해 에이전트가 파일을 읽고 쓸 수 있어서, 대화에서 시작한 작업을
+다운로드 링크에서 멈추지 않고 내 컴퓨터에서 끝까지 끝낼 수 있습니다.
 
 ## Use Cases Worth Opening
 

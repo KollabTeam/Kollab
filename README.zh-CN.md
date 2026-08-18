@@ -64,7 +64,26 @@ Kollab 做的是 prompt 之后的工作。
 | [Blog](https://kollab.im/blog) | 产品文章、工作流分析、AI Agent 对比和实用指南。 |
 | [Changelog](https://kollab.im/changelog) | 最近发了什么、什么时候发的、为什么这么改。 |
 | [Download](https://kollab.im/download) | 桌面端入口。 |
+| [Kollab 桌面端](https://github.com/KollabTeam/Kollab/releases/tag/desktop) | macOS 桌面端，开发版，可直接下载。 |
 | [GitHub Issues](https://github.com/KollabTeam/Kollab/issues) | 公开反馈、bug、feature request 和产品讨论。 |
+
+## Kollab 桌面端（开发版）
+
+Kollab 桌面端目前是**开发版**。它是真实签名并通过 Apple 公证的构建，我们自己也在日常使用——
+会有一些粗糙的地方，但迭代很快。装一次就行，之后它会在后台自动更新。
+
+| 平台 | 状态 | 下载 |
+| --- | --- | --- |
+| macOS（Apple 芯片） | 开发版 | **[下载 .dmg](https://github.com/KollabTeam/Kollab/releases/download/desktop/Kollab-mac-arm64.dmg)** |
+| macOS（Intel） | 暂未提供 | — |
+| Windows | 暂未提供 | — |
+| Linux | 开发中 | — |
+
+所有安装包都在同一个滚动发布里：[https://github.com/KollabTeam/Kollab/releases/tag/desktop](https://github.com/KollabTeam/Kollab/releases/tag/desktop)
+
+为什么需要桌面端：只有桌面端能让 Kollab 操作你自己的电脑。在你明确授权后，
+Agent 可以读写你批准的那些文件夹——对话里开始的工作可以直接在你的机器上做完，
+而不是停在一个下载链接。
 
 ## 推荐先看的 Use Cases
 

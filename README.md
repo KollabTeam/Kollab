@@ -64,7 +64,27 @@ It gives teams a shared workspace where AI agents can read context, use tools, c
 | [Blog](https://kollab.im/blog) | Product notes, workflow essays, AI agent comparisons, and practical guides. |
 | [Changelog](https://kollab.im/changelog) | What shipped, when, and why it changed. |
 | [Download](https://kollab.im/download) | Desktop app entry point. |
+| [Kollab Desktop](https://github.com/KollabTeam/Kollab/releases/tag/desktop) | Desktop app for macOS — developer preview, direct download. |
 | [GitHub Issues](https://github.com/KollabTeam/Kollab/issues) | Public feedback, bugs, feature requests, and product discussion. |
+
+## Kollab Desktop (Developer Preview)
+
+The Kollab desktop app is available as an early **developer preview**. It is a real, signed and
+notarized build that we ship from and use ourselves — expect a few rough edges, and expect it to keep
+improving quickly. It updates itself in the background, so you install it once.
+
+| Platform | Status | Download |
+| --- | --- | --- |
+| macOS (Apple Silicon) | Developer preview | **[Download .dmg](https://github.com/KollabTeam/Kollab/releases/download/desktop/Kollab-mac-arm64.dmg)** |
+| macOS (Intel) | Not yet available | — |
+| Windows | Not yet available | — |
+| Linux | In progress | — |
+
+All builds live on one rolling release: [https://github.com/KollabTeam/Kollab/releases/tag/desktop](https://github.com/KollabTeam/Kollab/releases/tag/desktop)
+
+Why the desktop app: it is the only place Kollab can operate your own computer. With your explicit
+permission, an agent can read and edit files in the folders you approve, so work that starts in a
+conversation can finish on your machine instead of stopping at a download link.
 
 ## Use Cases Worth Opening
 
