@@ -16,6 +16,7 @@ kollab workspace timer ...
 kollab workspace bot ...
 kollab workspace mcp ...
 kollab workspace memory ...
+kollab workspace space byok list
 ```
 
 ## Examples
@@ -24,7 +25,7 @@ kollab workspace memory ...
 kollab workspace project list
 kollab workspace project search --query "permission model"
 kollab workspace task list
-kollab workspace task create --project-id <project-id> --model-tier lite
+kollab workspace task create --project-id <project-id> --model-tier auto
 kollab workspace task ask --question "Summarize this project" --project-id <project-id>
 kollab workspace task answer-question --conversation-id <conversation-id> --tool-use-id <tool-use-id> --answers '{"approval":"allow"}'
 kollab workspace artifact list --conversation-id <conversation-id>

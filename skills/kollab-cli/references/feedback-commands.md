@@ -80,7 +80,6 @@ The CLI auto-attaches:
 
 - `taskUrl`: derived from `creds.api_url` + `$CURRENT_CONVERSATION_ID`
 - `conversationId`: `$CURRENT_CONVERSATION_ID`
-- `runtimeId`: `$AGENTCORE_RUNTIME_ID` / `$BEDROCK_AGENTCORE_RUNTIME_ID`
 - `locale`: `$KOLLAB_LOCALE` / `$LANG`
 
 Returns the new `issueUrl` and `issueNumber`. Show the URL to the user.

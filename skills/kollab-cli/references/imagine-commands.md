@@ -62,7 +62,7 @@ each search stays scoped to a real query or tag.
         "id": "uuid",
         "title": "@author - source-id",
         "prompt": "the actual prompt text in the requested language",
-        "notionCreatedAt": "2026-04-15T08:00:00Z",
+        "notionCreatedAt": null,
         "media": [
           {
             "id": "asset-uuid",
@@ -134,5 +134,3 @@ a content category.
 ## Notes
 
 - Read-only public endpoint; no Kollab credentials needed.
-- The Notion-sync path (`/api/internal/landing-prompts/...`) is service-only
-  and not exposed through this CLI.

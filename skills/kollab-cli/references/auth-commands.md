@@ -9,8 +9,8 @@ Sign in and persist the token / API URL locally.
 By default, this opens a browser URL, lets the user log in with the normal web account, and asks them to choose one space for the CLI session.
 
 ```bash
-kollab login --api-url https://kollab.im
-kollab login --token <token> --api-url https://kollab.im
+kollab login
+kollab login --token <token>
 ```
 
 Parameters:
@@ -20,7 +20,7 @@ Parameters:
 
 Notes:
 
-- The browser flow is now the default and the recommended path for humans.
+- The browser flow is the default and the recommended path for humans.
 - `--token` is the fallback for scripts, tests, or pre-issued workspace tokens.
 
 ## `kollab logout`
